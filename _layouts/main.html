@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  </head>
+
+  <body>
+    <section class="aw-main__section flex-column">
+      <div class="aw-main__content">
+        <img class="aw-main__image" src="./img/Adam.jpg" />
+        <h1>Adam Rafeek</h1>
+        <p> > I use code to turn ideas into reality_</p>
+        <p> > Welcome to my corner of the internet_</p>
+      </div>
+      <div class="aw-main__links">
+        <ul class="aw-nav">
+          <li class="aw-nav__item">
+            <a href="/about" class="bracket-link"> 
+              <div class="spacer__top"></div>
+              <div class="spacer__right"></div>
+              <div class="spacer__bottom"></div>
+              <div class="spacer__left"></div>
+              <span class="bracket-link__text">About</span>
+            </a>
+          </li>
+          <li class="aw-nav__item">
+            <a href="#" class="bracket-link"> 
+              <div class="spacer__top"></div>
+              <div class="spacer__right"></div>
+              <div class="spacer__bottom"></div>
+              <div class="spacer__left"></div>
+              <span class="bracket-link__text">Resume</span>
+            </a>
+          </li>
+          <li class="aw-nav__item">
+            <a href="posts" class="bracket-link"> 
+              <div class="spacer__top"></div>
+              <div class="spacer__right"></div>
+              <div class="spacer__bottom"></div>
+              <div class="spacer__left"></div>
+              <span class="bracket-link__text">Blog</span>
+            </a>
+          </li>
+          <li class="aw-nav__item">
+            <a href="https://github.com/arafeek" class="bracket-link"> 
+              <div class="spacer__top"></div>
+              <div class="spacer__right"></div>
+              <div class="spacer__bottom"></div>
+              <div class="spacer__left"></div>
+              <span class="bracket-link__text">GitHub</span>
+            </a>
+          </li>
+          <li class="aw-nav__item">
+            <a href="https://ca.linkedin.com/pub/adam-rafeek/89/71a/47a" class="bracket-link"> 
+              <div class="spacer__top"></div>
+              <div class="spacer__right"></div>
+              <div class="spacer__bottom"></div>
+              <div class="spacer__left"></div>
+              <span class="bracket-link__text">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+$text-color: #fff;
+$border-color: #fff;
+$spacer-color: rgb(23, 22, 22);
+$border-width: 3px;
+$hover-color: rgb(110, 234, 255);
+
+.bracket-link {
+  border: $border-width solid $border-color;
+  display: block;
+  padding: .5em .8em;
+  position: relative;
+  transform: translatez(0);
+  text-decoration: none;
+  color: $text-color;
+  
+  &:visited {
+    color: $text-color;
+  }
+
+  &:hover {
+    .spacer__top,
+    .spacer__bottom {
+      width: 0;
+    }
+
+    .spacer__right,
+    .spacer__left {
+      height: 0;
+    }
+
+    color: $hover-color;
+    border-color: $hover-color;
+    text-decoration: none;
+  }
+  
+}
+
+.bracket-link * {
+  transition: all 150ms;
+}
+
+.spacer {
+  &__top {
+    width: 82%;
+    height: $border-width;
+    position: absolute;
+    background-color: $spacer-color;
+    top: -$border-width;
+    left: 9%;
+  }
+  
+  &__right {
+    width: $border-width;
+    height: 60%;
+    position: absolute;
+    background-color: $spacer-color;
+    top: 20%;
+    right: -$border-width;
+  }
+  
+  &__bottom {
+    width: 82%;
+    height: $border-width;
+    position: absolute;
+    background-color: $spacer-color;
+    bottom: -$border-width;
+    left: 9%;
+  }
+  
+  &__left {
+    width: $border-width;
+    height: 60%;
+    position: absolute;
+    background-color: $spacer-color;
+    top: 20%;
+    left: -$border-width;
+  }
+}
