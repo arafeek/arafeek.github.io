@@ -115,3 +115,9 @@ how commas work in css */
     text-align: center;
   }
 }
+
+.aw-footer {
+  background-color: lighten($aw-dark-grey, 5%);
+  border-top: 5px solid $aw-light-blue;
+  color: $aw-body-text-color;
+}
