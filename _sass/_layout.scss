@@ -154,6 +154,10 @@
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
+
+    .aw-nav {
+        flex-direction: column;
+    }
 }
 
 
@@ -163,6 +167,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: $aw-dark-grey;
 }
 
 .page-heading {

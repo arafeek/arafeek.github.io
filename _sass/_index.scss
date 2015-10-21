@@ -1,5 +1,6 @@
 /* Comments in CSS exist between / * * /
 */
+
 body,
 html {
   height: 100%;
@@ -19,7 +20,7 @@ p {
 }
 
 .aw-main__section {
-  background-color: rgb(23, 22, 22);
+  background-color: $aw-dark-grey;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 90%;
@@ -91,6 +92,14 @@ how commas work in css */
 }
 
 .aw-main {
+  &__heading {
+    font-size: 55px;
+    font-weight: 700;
+  }
+
+  &__name {
+    margin-bottom: 50px;
+  }
 }
 
 .aw-nav {
@@ -98,8 +107,10 @@ how commas work in css */
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0;
 
   &__item {
+    flex-grow: 1;
     margin: 5px 5px;
     text-align: center;
   }

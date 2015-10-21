@@ -4,7 +4,7 @@ $spacer-color: rgb(23, 22, 22);
 $border-width: 3px;
 $hover-color: rgb(110, 234, 255);
 
-.bracket-link {
+%base-bracket-style {
   border: $border-width solid $border-color;
   display: block;
   padding: .5em .8em;
@@ -12,6 +12,10 @@ $hover-color: rgb(110, 234, 255);
   transform: translatez(0);
   text-decoration: none;
   color: $text-color;
+}
+
+.bracket-link {
+  @extend %base-bracket-style;
   
   &:visited {
     color: $text-color;
@@ -31,6 +35,10 @@ $hover-color: rgb(110, 234, 255);
     color: $hover-color;
     border-color: $hover-color;
     text-decoration: none;
+  }
+
+  &--no-hover {
+    @extend %base-bracket-style;
   }
   
 }
