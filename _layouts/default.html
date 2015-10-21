@@ -4,15 +4,15 @@
   {% include head.html %}
 
   <body>
+    <section class="aw-above-fold">
+      {% include header.html %}
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
-    </div>
-
+    </section>
     {% include footer.html %}
 
   </body>

@@ -193,8 +193,8 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: $base-font-size * 3;
+        height: $base-font-size * 3;
         vertical-align: middle;
 
         path {

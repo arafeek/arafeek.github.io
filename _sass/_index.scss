@@ -120,4 +120,20 @@ how commas work in css */
   background-color: lighten($aw-dark-grey, 5%);
   border-top: 5px solid $aw-light-blue;
   color: $aw-body-text-color;
+
+  &__links {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  &__link {
+    text-align: center;
+    width: 25%;
+  }
+}
+
+.aw-above-fold {
+  min-height: 85%;
 }
