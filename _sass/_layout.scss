@@ -171,7 +171,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    background-color: $aw-dark-grey;
+    color: $aw-dark-grey;
 }
 
 .page-heading {
@@ -195,6 +195,12 @@
 .post-link {
     display: block;
     font-size: 24px;
+    font-weight: 500;
+    color: $aw-dark-grey;
+    
+    &:visited {
+        color: $aw-dark-grey;
+    }
 }
 
 
