@@ -9,4 +9,11 @@
   &__link {
     margin-right: 25px;
   }
+
+  @include media-query($on-palm) {
+    &__nav {
+      @include justify-content(center);
+      padding-top: 30px;
+    }
+  }
 }
