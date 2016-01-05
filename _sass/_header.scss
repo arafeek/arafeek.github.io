@@ -1,0 +1,12 @@
+.aw-header {
+  width: 100%;
+  font-size: 1.4rem;
+  &__nav {
+    @include display(flex);
+    @include justify-content(flex-end);
+  }
+
+  &__link {
+    margin-right: 25px;
+  }
+}

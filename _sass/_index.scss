@@ -108,6 +108,7 @@ how commas work in css */
     @include display(flex);
     @include align-items(center);
     @include justify-content(center);
+    @include flex-wrap(wrap);
     height: 100%;
   }
 
