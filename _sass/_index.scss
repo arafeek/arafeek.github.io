@@ -4,11 +4,13 @@
 body,
 html {
   height: 100%;
+  font-size: $base-font-size;
 }
 
 
 body {
   color: rgb(241,241,241);
+  background-color: $aw-dark-grey;
   font-family: helvetica neue;
   margin: 0;
   height: 100%;
@@ -24,14 +26,14 @@ p {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   //height: 90%;
-  padding: 10%;
+  padding: 10% 1%;
 }
 
 .flex-column {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  @include display(flex);
+  @include align-items(center);
+  @include flex-direction(column);
+  @include justify-content(center);
 }
 
 
@@ -55,7 +57,7 @@ p {
 }
 
 .aw-resume__skills-wrap {
-  display: flex;
+  @include display(flex);
 }
 
 /* Here, don't add the contact title until we make that component. When you do, mention
@@ -67,7 +69,7 @@ how commas work in css */
 
 .aw-resume__skills {
   /* Tells the items to take up */
-  flex-grow: 1;
+  @include flex-grow(1);
 }
 
 .aw-resume__card {
@@ -94,24 +96,39 @@ how commas work in css */
 
 .aw-main {
   &__heading {
-    font-size: 55px;
+    font-size: 5.625rem;
     font-weight: 700;
   }
 
   &__name {
     margin-bottom: 50px;
   }
+
+  &__flexbox-wrap {
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    height: 100%;
+  }
+
+  &__whoiam {
+    color: $aw-light-blue;
+    font-size: 3.75rem;
+    font-weight: 200;
+    opacity: 0.6;
+  }
 }
 
 .aw-nav {
-  display: flex;
-  flex-wrap: wrap;
+  //@include display(flex);
+  @include display(flex);
+  @include flex-wrap(wrap);
   list-style: none;
   padding: 0;
   margin: 0;
 
   &__item {
-    flex-grow: 1;
+    @include flex-grow(1);
     margin: 5px 5px;
     text-align: center;
   }
@@ -123,7 +140,7 @@ how commas work in css */
   color: $aw-body-text-color;
 
   &__links {
-    display: flex;
+    @include display(flex);
     list-style: none;
     margin: 0 auto;
     width: 80%;
