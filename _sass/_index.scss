@@ -19,6 +19,10 @@ body {
 
 p {
   font-size: 18px;
+  &::selection {
+    color: $text-color;
+    background-color: $highlight-text-color;
+  }
 }
 
 section {
