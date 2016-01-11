@@ -41,9 +41,11 @@ $hover-color: $aw-light-blue;
   &--no-hover {
     @extend %base-bracket-style;
   }
-  
 }
-
+.bracket-link.projects-link:hover {
+  border-color: $aw-salmon;
+  color: $aw-salmon;
+}
 .bracket-link * {
   transition: all 150ms;
 }
