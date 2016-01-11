@@ -29,6 +29,10 @@ section {
   box-shadow: 0px 5px 10px 0px $aw-shadow inset;
 }
 
+ul {
+  list-style: none;
+}
+
 .flex-column {
   @include display(flex);
   @include align-items(center);
