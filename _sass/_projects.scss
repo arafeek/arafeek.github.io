@@ -5,6 +5,11 @@
     background-color: $aw-salmon;
     width: 100%;
   }
+
+  &__flex-wrap {
+    @include display(flex);
+    @include flex-wrap(wrap);
+  }
 }
 
 .project-card {

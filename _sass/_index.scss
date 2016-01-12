@@ -27,6 +27,11 @@ p {
 
 section {
   box-shadow: 0px 5px 10px 0px $aw-shadow inset;
+  padding: 30px 10px;
+}
+
+textarea {
+  resize: none;
 }
 
 ul {
@@ -48,16 +53,6 @@ ul {
 
 .aw-main__content {
   text-align: center;
-}
-
-.aw-resume__section,
-.aw-contact__section {
-  /* Here we are using Hexadecimal values for color instead of rgb. */
-  color: #323232;
-  /* mention we don't want things on the edge of the screen, then padding */
-  /* need to also show how blocks in html go from N E S W */
-  /* put some space inbetween the element border and inner conent */
-  padding: 0 5% 10%;
 }
 
 .aw-resume__skills-wrap {
