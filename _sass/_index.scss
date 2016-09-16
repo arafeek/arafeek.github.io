@@ -160,11 +160,12 @@ how commas work in css */
   }
 }
 
-.aw-above-fold {
-  min-height: 85%;
-}
-
 .section-title {
   font-weight: 700;
   font-size: 2.5rem;
+}
+
+.above-fold {
+  min-height: 100vh;
+  width: 100%;
 }
